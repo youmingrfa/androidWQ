@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +38,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public User user;
     public List<List<Group>> combGroup = new ArrayList<>();//群组对象的二维列表
 
-    Button btn_search,btn_create;
+    ImageView btn_search,btn_create;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

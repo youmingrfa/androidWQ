@@ -2,11 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/tab_messages"
         android:title="消息"
-        android:icon="@drawable/bottom_message_selector"/>
+        android:orderInCategory="0"
+        android:icon="@mipmap/ic_navigation_message"/>
     <item android:id="@+id/tab_groups"
         android:title="群组"
-        android:icon="@drawable/bottom_group_selector"/>
+        android:orderInCategory="1"
+        android:icon="@mipmap/ic_navigation_relative"/>
     <item android:id="@+id/tab_my_info"
         android:title="我"
-        android:icon="@drawable/bottom_me_selector"/>
+        android:orderInCategory="2"
+        android:icon="@mipmap/ic_navigation_mine"/>
 </menu>

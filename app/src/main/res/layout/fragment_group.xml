@@ -1,35 +1,53 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.creationclientdebug.fragment.GroupFragment">
 
-    <LinearLayout
+    <!--标题栏-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/message_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <android.support.v7.widget.Toolbar
-            app:title="群组"
-            android:background="@color/barBg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/btn_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="创建新群"/>
-        <Button
-            android:id="@+id/btn_search"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="搜索"/>
+        android:layout_height="wrap_content"
+        android:background="#d027a8f0">
 
-        <ExpandableListView
-            android:id="@+id/expandableListView"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_search">
-        </ExpandableListView>
-    </LinearLayout>
-</FrameLayout>
+            android:text="群组"
+            android:textColor="#fff"
+            android:textSize="@dimen/content_text_normal" />
+
+        <!--更多按钮-->
+        <ImageView
+            android:id="@+id/btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_add" />
+
+
+        <!--搜索按钮-->
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_search" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_toolbar">
+    </ExpandableListView>
+</RelativeLayout>

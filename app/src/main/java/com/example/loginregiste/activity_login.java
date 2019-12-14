@@ -34,37 +34,37 @@ public class activity_login extends AppCompatActivity implements View.OnClickLis
     }
 
     public void InitEvent(){
-        btn_registe = findViewById(R.id.btn_registe);
-        btn_forget = findViewById(R.id.btn_forget);
-        btn_Login = findViewById(R.id.btn_Login);
-        btn_forget.setOnClickListener(this);
-        btn_registe.setOnClickListener(this);
-        btn_Login.setOnClickListener(this);
-        phoneNum = findViewById(R.id.phoneNum);
-        passWord = findViewById(R.id.passWord);
+//        btn_registe = findViewById(R.id.btn_registe);
+//        btn_forget = findViewById(R.id.btn_forget);
+//        btn_Login = findViewById(R.id.btn_Login);
+//        btn_forget.setOnClickListener(this);
+//        btn_registe.setOnClickListener(this);
+//        btn_Login.setOnClickListener(this);
+//        phoneNum = findViewById(R.id.phoneNum);
+//        passWord = findViewById(R.id.passWord);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btn_registe:
-                Intent i1 = new Intent(activity_login.this, activity_register.class);
-                startActivity(i1);
-                break;
-            case R.id.btn_forget:
-                Intent i2 = new Intent(activity_login.this, acticity_forget.class);
-                startActivity(i2);
-                break;
-            case R.id.btn_Login:
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Login();
-                    }
-                }).start();
-
-                break;
-        }
+//        switch (v.getId()){
+//            case R.id.btn_registe:
+//                Intent i1 = new Intent(activity_login.this, activity_register.class);
+//                startActivity(i1);
+//                break;
+//            case R.id.btn_forget:
+//                Intent i2 = new Intent(activity_login.this, acticity_forget.class);
+//                startActivity(i2);
+//                break;
+//            case R.id.btn_Login:
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Login();
+//                    }
+//                }).start();
+//
+//                break;
+//        }
     }
 //Login
     public void Login(){

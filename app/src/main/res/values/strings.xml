@@ -1,5 +1,25 @@
 <resources>
-    <string name="app_name">登录</string>
+    <string name="app_name">androidWQ</string>
+    <string name="input_account">输入手机号</string>
+    <string name="input_password">密码</string>
+    <string name="login_account_forget_password">忘记密码</string>
+    <string name="login_input_repassword_hint">请确认密码</string>
+    <string name="login">登 录</string>
+    <string name="login_titleBar_login">登录</string>
+    <string name="login_forget_password">忘记密码</string>
+    <string name="login_register">注册账号</string>
+    <string name="login_message">阅读并同意</string>
+    <string name="login_terms_of_service">服务条款</string>
+    <string name="login_titleBar_register">注册</string>
+    <string name="login_input_phoneNumber_hint">请输入手机号</string>
+    <string name="login_input_check_code_hint">请输入验证码</string>
+    <string name="login_input_btn_get_code">获取验证码</string>
+    <string name="login_input_password_hint">请输入密码</string>
+    <string name="login_input_username">请输入账号</string>
+    <string name="register_tips">登录密码为6到20位数字和字母的组合，区分大小写</string>
+    <string name="title_message">消息</string>
+    <string name="title_relative">联系人</string>
+    <string name="title_mine">我</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

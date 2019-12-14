@@ -8,4 +8,142 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--自定义EditText的下划线-->
+    <style name="Theme.Custom.Control.EditText" parent="Theme.AppCompat.Light">
+        <!--EditText未被激活时的下划线颜色-->
+        <item name="colorControlNormal">@color/transparent</item>
+        <!--EditText激活时的下划线颜色-->
+        <item name="colorControlActivated">@color/transparent</item>
+    </style>
+
+    <!--登录按钮样式-->
+    <style name="login_btn_style" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@drawable/round_btn_orange_self_selector</item>
+        <item name="android:enabled">false</item>
+        <item name="android:text">@string/login_titleBar_login</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize_18</item>
+    </style>
+
+    <!--获取验证码按钮样式-->
+    <style name="login_btn_getCode_style" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/login_quick_login_getCode_width</item>
+        <item name="android:layout_height">@dimen/login_quick_login_getCode_height</item>
+        <item name="android:layout_marginRight">@dimen/login_quick_login_getCode_marginRight</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/btn_get_code_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/login_input_btn_get_code</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/login_content_size</item>
+    </style>
+
+    <!--验证提示-->
+    <style name="login_tip_getCode_style" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/login_quick_login_getCode_width</item>
+        <item name="android:layout_height">@dimen/login_quick_login_getCode_height</item>
+        <item name="android:layout_marginRight">@dimen/login_quick_login_getCode_marginRight</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/btn_get_code_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">提示信息</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/login_content_size</item>
+    </style>
+
+    <!--登录界面的输入框-->
+    <style name="LoginEditTextTheme" parent="AccountTextStyle">
+
+        <item name="android:textColorHint">@color/alpha70_white</item>
+        <!--光标颜色-->
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:theme">@style/Theme.Custom.Control.EditText</item>
+        <!--下划线颜色-->
+        <item name="android:backgroundTint">@color/transparent</item>
+        <!--选中文本的背景颜色-->
+        <item name="android:textColorHighlight">@color/alpha50_light_green</item>
+        <!--<item name="android:textSelectHandle">@color/alpha90_green</item>-->
+        <!--小水滴图标-->
+        <item name="android:textSelectHandleLeft">@drawable/custom_text_select_handle_left_material</item>
+        <item name="android:textColorHighlightInverse">@drawable/custom_text_select_handle_middle_material</item>
+        <item name="android:textSelectHandleRight">@drawable/custom_text_select_handle_right_material</item>
+        <!--行间距 默认间距的倍数-->
+        <!--android:lineSpacingMultiplier="20"-->
+        <!--行间距 固定值-->
+        <!--<item name="android:lineSpacingExtra">10dp</item>-->
+    </style>
+
+    <style name="AccountTextStyle">
+
+        <item name="android:textColor">@color/qq_white</item>
+
+        <item name="android:textSize">20sp</item>
+        <!--最多显示1行-->
+        <item name="android:maxLines">1</item>
+        <!--垂直滚动条-->
+        <item name="android:scrollbars">vertical</item>
+        <!--单行?-->
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!--标题的基础样式-->
+    <style name="base_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--登录输入框样式-->
+    <style name="login_editText_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/gray01</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <!--清空输入框样式-->
+    <style name="common_clear_input_imageView_style">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:src">@mipmap/delete_username</item>
+    </style>
+
+    <!--分割线的样式-->
+    <style name="divide_horizontal_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:background">#50666666</item>
+    </style>
+
+    <!--返回按钮的样式-->
+    <style name="common_left_back_imageView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/ic_back</item>
+        <item name="android:background">@drawable/back_img_selector</item>
+        <!--<item name="android:layout_marginLeft">15dp</item>-->
+        <!--<item name="android:layout_marginTop">15dp</item>-->
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+
 </resources>

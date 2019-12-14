@@ -36,8 +36,6 @@ public class activity_foget2 extends AppCompatActivity implements View.OnClickLi
 
         Bundle bundle = this.getIntent().getExtras();
         phoneNum = bundle.getString("phone");
-
-        tv1.setText("验证码将发送到"+phoneNum);
     }
 
     public void InitEvent(){
@@ -45,7 +43,6 @@ public class activity_foget2 extends AppCompatActivity implements View.OnClickLi
         ed2 = findViewById(R.id.ed2);
         btn_send = findViewById(R.id.btn_send);
         btn_confirm = findViewById(R.id.btn_confirm);
-        tv1 = findViewById(R.id.tv1);
         btn_send.setOnClickListener(this);
         btn_confirm.setOnClickListener(this);
         mTimeCount = new TimeCount(60000, 1000);

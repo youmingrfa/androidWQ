@@ -56,7 +56,7 @@ public class MyInfoFragment extends Fragment {
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.btn_log_out:
-                    activity_login.startActivity(getContext());
+//                    activity_login.startActivity(getContext());
                     HeartBeatService.stopMe(getContext());
                     getActivity().finish();
                     break;

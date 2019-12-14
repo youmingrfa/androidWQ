@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.example.creationclientdebug.activity.SingleSigninInfoActivity"></activity>
+        <activity android:name="com.example.creationclientdebug.activity.SingleSigninInfoActivity" />
         <activity android:name="com.example.creationclientdebug.activity.SigninRecodeActivity" />
         <activity android:name="com.example.creationclientdebug.activity.UserInfoActivity" />
         <activity android:name="com.example.creationclientdebug.activity.UserChangeInfoActivity" />
@@ -52,16 +52,15 @@
         <activity
             android:name=".acticity_forget"
             android:label="忘记密码" />
-        <activity
-            android:name=".activity_register"
-            android:label="用户注册" />
-        <activity android:name=".activity_login">
+        <activity android:name="com.example.creationclientdebug.activity.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.creationclientdebug.activity.ForgetActivity" />
+        <activity android:name="com.example.creationclientdebug.activity.RegisterActivity"></activity>
     </application>
 
 </manifest>

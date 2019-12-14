@@ -48,7 +48,7 @@
                     android:id="@+id/btn_next"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:background="@drawable/bt_shape"
+                    android:background="#d027a8f0"
                     android:text="下一步"
                     android:textColor="#ffffffff"/>
 

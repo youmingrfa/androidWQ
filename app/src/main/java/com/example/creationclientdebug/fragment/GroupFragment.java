@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.creationclientdebug.activity.GroupInfoActivity;
@@ -42,7 +43,7 @@ public class GroupFragment extends Fragment implements View.OnClickListener {
     public List<List<String>>list;
     public User user;
     public List<List<Group>> combGroup = new ArrayList<>();//群组对象的二维列表
-    Button btn_search,btn_create;
+    private ImageView btn_search,btn_create;
     private boolean isFirstLoad = true;
     private Handler mHandler = new Handler(Looper.getMainLooper());
     public static GroupFragment getInstance(){
@@ -284,7 +285,7 @@ public class GroupFragment extends Fragment implements View.OnClickListener {
 
         @Override
         public boolean isChildSelectable(int groupPosition, int childPosition) {
-            // TODO Auto-generated method stub
+            // TODO Auto-generated method stubz
             return true;
         }
     }

@@ -8,11 +8,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <!--标题栏-->
         <android.support.v7.widget.Toolbar
-            app:title="消息"
+            android:id="@+id/message_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/barBg"/>
+            android:background="#d027a8f0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textColor="#fff"
+                android:textSize="@dimen/content_text_normal" />
+
+        </android.support.v7.widget.Toolbar>
         <ListView
             android:id="@+id/list_msg"
             android:layout_width="match_parent"
